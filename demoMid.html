@@ -24,14 +24,21 @@
 	 z-index: 90;
 	 left: 200px;
 	 z-index: 100;
-	 animation:swim 30s infinite linear;
-	 /*firefox*/
-	 -moz-animation:swim 30s infinite linear;
-	 /*webkit*/
-	 -webkit-animation:swim 30s infinite linear;
+	-moz-animation-name: swim;
+	-webkit-animation-name: swim;
+	-webkit-animation-duration: 100s;
+	-moz-animation-duration: 100s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-moz-animation-play-state: running;
+	-webkit-transform:scaleX(1)
+	-moz-transform:scaleX(1)			
 	 }
-		
 	@keyframes swim{
+<<<<<<< HEAD
 	 from{
 	  left:80%;
 	 }
@@ -319,309 +326,69 @@
 	  left:80%;
 	 }
 	}
+=======
+	0%   {left:190px; top:400px;}
+	1%   {left:190px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+		}
+	@-moz-keyframes swim{
+	0%   {left:190px; top:400px;}
+	1%   {left:190px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+		}
+>>>>>>> 42765a0c6bc18ef910ac2f80867a2bd2ccf82424
 		.fish1{
- height: 230px;
- left: 200px;
- position: absolute;
- top: 65%;
- width: 290px;
- z-index: 90;
- left: 200px;
- z-index: 100;
- animation:swim1 40s infinite linear;
- /*firefox*/
- -moz-animation:swim1 40s infinite linear;
- /*webkit*/
- -webkit-animation:swim1 40s infinite linear;
+	left:140px; top:400px;
+	width: 200px; height: 147px;
+	position: absolute;
+	-moz-animation-name: swim1;
+	-webkit-animation-name: swim1;
+	-webkit-animation-duration: 20s;
+	-moz-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-moz-animation-play-state: running;
+	-webkit-transform:scaleX(1)
+	-moz-transform:scaleX(1)
 }
 	@keyframes swim1{
- from{
-  left:75%;
- }
- 20%{
-  left:0;
-  transform:scaleX(1);
-  z-index:90;
- }
- 20.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 21%{
-  left:80px;
- }
- 42%{
-  left:60%;
- }
- 50%{
-  z-index:28;
-  top:75%;
-  left:75%;
-  transform:scaleX(-1);
- }
- 50.5%{
-  transform:scaleX(1);
-  z-index:100;
-  left:75%;
-  top:60%;
- }
- 51%{
-  left:50%;
-  z-index:150;
- }
- 60%{
-  left:25%;
-  z-index:150;
- }
- 64%{
-  left:20%;
-  z-index:150;
- }
- 66%{
-  left:4%;
-  z-index:150;
- }
- 69%{
-  left:-30px;
-  z-index:150;
- }
- 70%{
-  top:35%;
-  left:-30px;
-  transform:scaleX(1);
-  z-index:90;
- }
- 70.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 75%{
-  left:50%;
- }
- 80%{
-  left:60%;
- }
- 81%{
-  left:65%;
-  top:70%;
- }
- 82%{
-  left:70%;
-  transform:scaleX(-1);
- }
- 82.5%{
-  transform:scaleX(1);
-  top:72%;
-  left:68%;
- }
- 84%{
-  top:65%;
-  left:70%;
-  z-index:28;
- }
- 88%{
-  top:70%;
-  left:75%;
-  z-index:28;
- }
- to{
-  left:75%;
- }
-}
+ 	0%   {left:140px; top:400px;}
+	1%   {left:140px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+		}
 	@-moz-keyframes swim1{
- from{
-  left:75%;
- }
- 20%{
-  left:0;
-  transform:scaleX(1);
-  z-index:90;
- }
- 20.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 21%{
-  left:80px;
- }
- 42%{
-  left:60%;
- }
- 50%{
-  z-index:28;
-  top:75%;
-  left:75%;
-  transform:scaleX(-1);
- }
- 50.5%{
-  transform:scaleX(1);
-  z-index:100;
-  left:75%;
-  top:60%;
- }
- 51%{
-  left:50%;
-  z-index:150;
- }
- 60%{
-  left:25%;
-  z-index:150;
- }
- 64%{
-  left:20%;
-  z-index:150;
- }
- 66%{
-  left:4%;
-  z-index:150;
- }
- 69%{
-  left:-30px;
-  z-index:150;
- }
- 70%{
-  top:35%;
-  left:-30px;
-  transform:scaleX(1);
-  z-index:90;
- }
- 70.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 75%{
-  left:50%;
- }
- 80%{
-  left:60%;
- }
- 81%{
-  left:65%;
-  top:70%;
- }
- 82%{
-  left:70%;
-  transform:scaleX(-1);
- }
- 82.5%{
-  transform:scaleX(1);
-  top:72%;
-  left:68%;
- }
- 84%{
-  top:65%;
-  left:70%;
-  z-index:28;
- }
- 88%{
-  top:70%;
-  left:75%;
-  z-index:28;
- }
- to{
-  left:75%;
- }
-}
+ 	0%   {left:140px; top:400px;}
+	1%   {left:140px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+	}
 	@-webkit-keyframes swim1{
- from{
-  left:75%;
- }
- 20%{
-  left:0;
-  transform:scaleX(1);
-  z-index:90;
- }
- 20.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 21%{
-  left:80px;
- }
- 42%{
-  left:60%;
- }
- 50%{
-  z-index:28;
-  top:65%;
-  left:75%;
-  transform:scaleX(-1);
- }
- 50.5%{
-  transform:scaleX(1);
-  z-index:100;
-  left:75%;
-  top:50%;
- }
- 51%{
-  left:50%;
-  z-index:150;
- }
- 60%{
-  left:25%;
-  z-index:150;
- }
- 64%{
-  left:20%;
-  z-index:150;
- }
- 66%{
-  left:4%;
-  z-index:150;
- }
- 69%{
-  left:-30px;
-  z-index:150;
- }
- 70%{
-  top:35%;
-  left:-30px;
-  transform:scaleX(1);
-  z-index:90;
- }
- 70.5%{
-  transform:scaleX(-1);
-  z-index:10;
-  left:-30px;
- }
- 75%{
-  left:50%;
- }
- 80%{
-  left:60%;
- }
- 81%{
-  left:65%;
-  top:60%;
- }
- 82%{
-  left:70%;
-  transform:scaleX(-1);
- }
- 82.5%{
-  transform:scaleX(1);
-  top:62%;
-  left:68%;
- }
- 84%{
-  top:65%;
-  left:70%;
-  z-index:28;
- }
- 88%{
-  top:60%;
-  left:75%;
-  z-index:28;
- }
- to{
-  left:75%;
- }
-}
+ 	0%   {left:140px; top:400px;}
+	1%   {left:140px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+	}
 		.shark{
 	 height: 230px;
 	 left: 200px;
@@ -1333,6 +1100,11 @@
 	<div class="bubbles bubble-8"></div>
 	<div class="bubbles bubble-10"></div>
 	<div class="bubbles bubble-9"></div>
+	
+	<audio controls>
+   
+    <source src="NhacThuGianTiengNuocChay-V.A-3651842.mp3" type="audio/mpeg">
+  </audio>
 	
 </body>
 </html>
