@@ -4,17 +4,24 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 	<style>
+		 * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        
+        #background {
+            background-size: auto;
+            background-image: url("bg1.jpg");
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            width: 100%;
+            height: 995px;
+            position: relative
+        }
 		
-		html{
-			background-size: auto; 
-			background-image: url( "b487792e6ba26189a6bff37e3ea24552.jpg");
-			background-repeat: no-repeat;
-				-webkit- background-size: cover;
-				-moz- background-size: cover;
-				-o- background-size: cover;
-			background-attachment: fixed;
-			background-size: cover;
-		}			
 		.fish{
 	 height: 230px;
 	 left: 200px;
@@ -778,6 +785,7 @@
 </head>
 
 <body>
+	<div id="background">
 	<div class="fish">
 <img alt="Gold Fish-1" src="https://4.bp.blogspot.com/-rorBvXOHGzw/V1FYqw71c9I/AAAAAAAAa6I/jw59Ffb6QU05SzJvUfa4flTfEbYuHfwfwCK4B/s1600/ubur-mys2010.gif"; width="100px" height="150px" /></div>
 	
@@ -799,8 +807,22 @@
 	<div style="position: fixed; bottom: 0px; height: 290px; left: 150px; width: 1820px;"><img alt=" " border="0" src="http://1.bp.blogspot.com/-2mov2EtgtHI/V1FlDgRLHSI/AAAAAAAAa9c/HxGyBtrQLlUVhVClTtjd_vzJB2cYHtargCK4B/s1600/pohon-5-mys2010.png" title=" " /></div>
 	
 	<div style="position: fixed; bottom: 0px; height: 290px; right: 150px; width: 1720px;"><img alt=" " border="0" src="http://3.bp.blogspot.com/-3_PC-Hf3YVI/V1FaEpINvaI/AAAAAAAAa6k/_hy_-bsBTLYJTx4kFS_sz8tcBZZEbuvgACK4B/s1600/pohon-1-mys2010.png" title=" " /></div>
-	
-	
+		
+   
+        <div class="button">
+            <button type="button" onClick="changeBG1()">bt1</button>
+			
+        </div>
+        <div class="button">
+            <button type="button" onClick="changeBG2()">bt2</button>
+        </div>
+			<div>
+	<audio controls>  
+    <source src="NhacThuGianTiengNuocChay-V.A-3651842.mp3" type="audio/mpeg">
+  </audio>
+	</div>
+
+	</div> 
 	<div class="bubbles bubble-5"></div>
 	<div class="bubbles bubble-2"></div>
 	<div class="bubbles bubble-6"></div>
@@ -810,10 +832,17 @@
 	<div class="bubbles bubble-8"></div>
 	<div class="bubbles bubble-10"></div>
 	<div class="bubbles bubble-9"></div>
+
+ </div>
+    <script>
+        function changeBG1() {
+            document.getElementById("background").style.backgroundImage = "url('Screenshot_1.png')";
+        }
+
+        function changeBG2() {
+            document.getElementById("background").style.backgroundImage = "url('b487792e6ba26189a6bff37e3ea24552.jpg')";
+        }
 	
-	<audio controls>  
-    <source src="NhacThuGianTiengNuocChay-V.A-3651842.mp3" type="audio/mpeg">
-  </audio>
-	
+	</script>
 </body>
 </html>
